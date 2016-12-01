@@ -1,0 +1,22 @@
+{
+  "name": "polp",
+  "version": "1.0.0",
+  "description": "server initiation",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BridgeNB/plop.git"
+  },
+  "keywords": [
+    "cs252"
+  ],
+  "author": "Yangqiao Zheng, Logan, Sophie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BridgeNB/plop/issues"
+  },
+  "homepage": "https://github.com/BridgeNB/plop#readme"
+}
