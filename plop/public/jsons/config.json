@@ -1,0 +1,7 @@
+{"sizes":[{"size":12,"title":"Very Small"},{"size":18,"title":"Small"},{"size":25,"title":"Medium"},{"size":36,"title":"Big"},{"size":64,"title":"Very Big"}],
+
+"modes":[{"mode":1,"title":"Upper Rolling"},{"mode":2,"title":"Bottom Rolling"},{"mode":5,"title":"Upper Disappearing"},{"mode":4,"title":"Bottom Disappearing"},{"mode":6,"title":"Inverse Rolling"}],
+
+"colors":[{"color":"000000","title":"Black"},{"color":"C0C0C0","title":"Gray"},{"color":"ffffff","title":"White"},{"color":"ff0000","title":"Red"},{"color":"00ff00","title":"Green"},{"color":"0000ff","title":"Blue"},{"color":"ffff00","title":"Yellow"},{"color":"00ffff","title":"Dark Green"},{"color":"ff00ff","title":"Wine"}],
+
+"inits":{"size":3,"mode":0,"color":4}}
