@@ -5,7 +5,6 @@ The purpose of Plop is to plop any questions students have directly on professor
 
 ### Router description ###
 
-1.
   - Server: listen to clients, receive plops and show plops on the plop client
   - Send-client: send plop.  controller - send.js
   - Show-client: show plop.  controller - show.js

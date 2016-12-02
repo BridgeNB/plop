@@ -13,6 +13,6 @@ window.addEventListener('load', function () {
         console.log(msg);
         $('#messages').append($('<li>').text(msg));
         var plop = JSON.parse(msg);
-        CM.send(polp);
+        CM.send(plop);
     });
 });
