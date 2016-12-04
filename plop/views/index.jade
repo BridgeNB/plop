@@ -1,42 +1,11 @@
-doctype html
-html
-    head
-        title= title
-        link(rel='stylesheet', href='/stylesheets/style.css')
-        link(rel='stylesheet', href='/stylesheets/index.css')
-        link(rel='stylesheet' href='http://www.w3schools.com/lib/w3.css')
-        script(src='/javascripts/CommentCoreLibrary.js')
-    body
-    #background
-        // img(src='/images/troll-face.png', alt='trollface')
-        #my-player.abp(style='width:50%; height:50%; margin:auto')
-            #my-comment-stage.container
-            .w3-content.w3-display-container
-                img.mySlides(src='/images/lab6_slide_1.png', style='max-height:100%; width:100%;')       
-                img.mySlides(src='/images/lab6_slide_2.png', style='max-height:100%; width:100%;')
-                img.mySlides(src='/images/lab6_slide_3.png', style='max-height:100%; width:100%;')
-        a.w3-btn-floating.w3-display-left(onclick='plusDivs(-1)') <
-        a.w3-btn-floating.w3-display-right(onclick='plusDivs(1)') >
-        script.
-           var slideIndex = 1;
-           showDivs(slideIndex);
-           function plusDivs(n) {
-           showDivs(slideIndex += n);
-           }
-           function showDivs(n) {
-           var i;
-           var x = document.getElementsByClassName("mySlides");
-           if (n > x.length) {slideIndex = 1}
-           if (n < 1) {slideIndex = x.length}
-           for (i = 0; i < x.length; i++) {
-           x[i].style.display = "none";
-           }
-           x[slideIndex-1].style.display = "block";
-           }
-        
+extends layout
 
-
-        
-        <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        script(src='/javascripts/index.js')
+block content
+  h1 Welcome to plop
+  if (!user)
+    a(href="/login") Login
+    br
+    a(href="/register") Register
+  if (user)
+    p You are currently logged in as #{user.username}
+    a(href="/logout") Logout
